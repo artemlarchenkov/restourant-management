@@ -1,8 +1,9 @@
 package models
 
 import (
-	"go.mongodb.org/mongo-driver/bson/primitive"
 	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 type Food struct {
@@ -13,5 +14,5 @@ type Food struct {
 	Created_at time.Time          `json:"created_at"`
 	Updated_at time.Time          `json:"updated_at"`
 	Food_id    string             `json:"food_id"`
-	Menui_id   *string            `json:"menui_id" validate:"required`
+	Menu_id    *string            `json:"menu_id" validate:"required"`
 }
