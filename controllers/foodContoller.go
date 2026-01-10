@@ -35,7 +35,6 @@ func GetFood() gin.HandlerFunc {
 
 func GetFoods() gin.HandlerFunc {
 	return func(c *gin.Context) {
-
 	}
 }
 
